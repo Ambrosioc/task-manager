@@ -17,6 +17,10 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require("daisyui")],
+	plugins: [
+		// Import de DaisyUI si nécessaire
+		require("daisyui") as any, // Assure-toi que la conversion en `any` est appropriée
+	],
 };
+
 export default config;
